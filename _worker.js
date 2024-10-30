@@ -1,7 +1,3 @@
-addEventListener('fetch', event => {
-  event.respondWith(handleRequest(event.request))
-})
-
 async function handleRequest(request) {
   // Target URL
   const targetUrl = 'https://raw.githubusercontent.com/onepunchko/chromego_merge/refs/heads/main/sub/merged_proxies_new.yaml'
@@ -25,5 +21,4 @@ async function handleRequest(request) {
   })
 }
 
-// Add this line to make it compatible with Pages
 export default handleRequest
